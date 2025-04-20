@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login / Register</title>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+  <div class="container">
+    <div class="form-container" id="formBox">
+      <h1 id="formTitle">Login</h1>
+      <input type="text" id="username" placeholder="Enter Username"/>
+      <input type="password" id="password" placeholder="Enter Password"/>
+      <button onclick="submitForm()">Login</button>
+      <p id="toggleText">Don't have an account? <a onclick="toggleForm()">Register</a></p>
+      <p id="message"></p>
+    </div>
+    <div class="secure-page" id="securePage" style="display:none;">
+      <h2>🔐 Secure Area</h2>
+      <p>Welcome! You’ve successfully logged in.</p>
+      <button onclick="logout()">Logout</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
